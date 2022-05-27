@@ -1,0 +1,160 @@
+:root{
+    --brancoprincipal: #ffffff;
+    --cinzasecundario: #c0c0c0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+    --font-principal:"Inter";
+    --botao-azul-efeito:#3c92fa;
+
+}
+
+body{
+    background: var(--cor-de-fundo);
+    color: var(--brancoprincipal);
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.principal{
+    background-image: url(img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;  
+}
+
+.container{
+    height: 100vh; 
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container__titulo{
+    font-size: 28px;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__botao{
+    background-color:var(--botao-azul);
+    border-radius: 16px;
+    padding: 1em;
+    text-decoration: none;
+    margin-bottom: 1em;
+    color: var(--brancoprincipal);
+    display: block;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo)
+}
+
+.botao_secundario{
+    background: transparent;
+    border: 2px solid var(--brancoprincipal);
+}
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--cinzasecundario);
+}
+
+.secundario__imagem {
+   width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--brancoprincipal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinzasecundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.descricao__titulo{
+    font-size: 48px;
+    color: var(--brancoprincipal);
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--brancoprincipal);
+}
+
+.rodape{
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__logo{
+    margin: 0 50%;
+}
+
+.rodape__lista {
+    justify-content: center;
+    display: flex;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link {
+    text-decoration: none;
+    margin-left: 1em;
+    color: var(--brancoprincipal);
+}
+
+.rodape__texto{
+    color: var(--cinzasecundario);
+    margin: 1em 0;
+    font-size: 14px;
+}
+
+.lista__link:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link:active {
+    color: purple;
+}
+
